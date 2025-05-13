@@ -1,0 +1,176 @@
+
+DevOps + AWS 30-Day Detailed Practical Roadmap
+Led by: Bhargav | Learner: Chaitanya (3.5 yrs exp, basic AWS knowledge)
+
+--------------------------------------------------
+WEEK 1 – DevOps, Linux & Git Basics
+--------------------------------------------------
+Day 1: DevOps Fundamentals
+- What is DevOps and why it matters
+- DevOps lifecycle: Plan, Develop, Build, Test, Release, Deploy, Operate, Monitor
+- Key practices: CI/CD, IaC, Monitoring, Automation
+- Tools overview: Git, Jenkins, Docker, Kubernetes, Terraform, Ansible, Prometheus, Grafana, AWS
+
+Day 2: Linux Basics
+- Filesystem hierarchy and navigation
+- File and directory permissions (`chmod`, `chown`)
+- User management: `adduser`, `usermod`, `passwd`
+- Disk usage: `df`, `du`
+- Process monitoring: `ps`, `top`, `kill`
+- File operations: `cp`, `mv`, `rm`, `touch`, `mkdir`
+- Remote access: SSH, SCP
+
+Day 3: Bash Scripting
+- Variables and data types
+- Conditional statements: `if`, `else`, `elif`
+- Loops: `for`, `while`
+- Functions and arguments
+- Logging and redirection: `>`, `>>`, `2>&1`
+- Script task: Compress folder, backup logs, log output
+
+Day 4: Git Basics
+- Git init, status, add, commit, log
+- Configuring Git username and email
+- Cloning repositories from GitHub
+- Pushing and pulling changes
+- Viewing history and diffs
+
+Day 5: Git Branching and Workflow
+- Creating branches, switching branches
+- Merging branches, resolving conflicts
+- GitFlow vs Trunk-based workflow
+- Pull requests and code review basics
+- Remote collaboration using GitHub
+
+Day 6: AWS Core Services Introduction
+- IAM: users, groups, policies, roles, best practices
+- EC2: key pairs, AMIs, instance types, SSH access
+- S3: buckets, objects, versioning, access policies
+- AWS CLI configuration and basic commands
+
+Day 7: Recap and Practice
+- Review: Linux + Git + AWS services
+- Hands-on script to launch EC2 and upload files to S3
+- Document key learnings and commands
+
+--------------------------------------------------
+WEEK 2 – Jenkins CI/CD with Git & AWS
+--------------------------------------------------
+Day 8: Jenkins Installation and Basics
+- Installing Jenkins on EC2 or local
+- Unlocking Jenkins and installing plugins
+- User setup and global configurations
+- Creating and running freestyle jobs
+
+Day 9: GitHub Integration and Job Setup
+- Connecting Jenkins to GitHub
+- Polling GitHub vs Webhooks
+- Create a Jenkins job to run a shell script
+
+Day 10: Jenkins Pipeline as Code
+- Jenkinsfile syntax: `pipeline`, `agent`, `stages`, `steps`
+- Common steps: `checkout scm`, `sh`, `archiveArtifacts`
+- Creating a basic build pipeline using Jenkinsfile
+
+Day 11: Webhooks and Triggering Builds
+- Setting up GitHub Webhooks
+- Jenkins job triggers: SCM polling, webhook trigger
+- Automating build triggers on code push
+
+Day 12: AWS CLI in Jenkins
+- Configuring AWS credentials in Jenkins
+- Using AWS CLI in pipeline scripts
+- Upload build artifacts to S3
+
+Day 13: Jenkins Notifications
+- Install and configure Email Extension plugin
+- Setup Slack integration for notifications
+- Send notifications on build success/failure
+
+Day 14: CI/CD Recap and Documentation
+- Finalize CI/CD pipeline
+- Create documentation of GitHub → Jenkins → S3 workflow
+
+--------------------------------------------------
+WEEK 3 – Docker & Kubernetes
+--------------------------------------------------
+Day 15: Docker Introduction
+- Containers vs Virtual Machines
+- Images, containers, volumes, networks
+- Docker commands: `build`, `run`, `exec`, `ps`, `logs`, `rm`
+
+Day 16: Dockerfile and ECR
+- Writing Dockerfile: FROM, RUN, COPY, CMD
+- Tagging and pushing images
+- ECR: create repo, authenticate, push image
+
+Day 17: Docker Compose
+- Docker Compose syntax: services, volumes, networks
+- Multi-container apps (e.g., app + database)
+- Commands: `up`, `down`, `logs`, `exec`
+
+Day 18: Kubernetes Introduction
+- Core concepts: Pods, Deployments, Services
+- Install Minikube or kind for local testing
+- `kubectl` basics: apply, get, describe, logs
+
+Day 19: K8s YAMLs
+- Deployment and Service YAML definitions
+- Labels, selectors, ports
+- Apply and delete resources with kubectl
+
+Day 20: Expose Services and Update
+- Service types: ClusterIP, NodePort, LoadBalancer
+- Rolling updates, rollout and rollback
+- Scale deployments
+
+Day 21: Kubernetes Debugging
+- Commands: `logs`, `exec`, `describe`
+- View events, troubleshoot crashes and restarts
+- Practice common issues
+
+--------------------------------------------------
+WEEK 4 – Terraform, Ansible, Monitoring, Final Project
+--------------------------------------------------
+Day 22: Terraform Basics
+- Providers, resources, variables, outputs
+- State file concept and management
+- Writing basic Terraform for EC2 + S3
+
+Day 23: Terraform for Jenkins Infra
+- Provision Jenkins EC2 with Terraform
+- Use variables and remote backend (optional)
+- Organize files: main.tf, variables.tf, outputs.tf
+
+Day 24: Ansible Basics
+- Inventory files, ad-hoc commands
+- Playbooks: tasks, modules, handlers
+- Install Nginx using a playbook
+
+Day 25: Ansible Roles and Jenkins Setup
+- Directory structure for roles
+- Templates and handlers
+- Automate Jenkins installation on EC2
+
+Day 26: Monitoring with Prometheus & Grafana
+- Install Prometheus and Grafana on EC2
+- Configuration basics: prometheus.yml
+- Basic dashboard setup
+
+Day 27: Node Exporter + Grafana Dashboard
+- Install and configure Node Exporter
+- Create Grafana dashboard to monitor EC2 metrics
+- Explore other exporters
+
+Day 28: AWS CodePipeline Overview (Optional)
+- CodePipeline, CodeBuild, CodeDeploy basics
+- Mapping Jenkins pipeline to CodePipeline flow
+
+Day 29: Final Project
+- Build end-to-end pipeline: GitHub → Jenkins → Docker → ECR → Kubernetes → Monitoring
+- Document each step with YAMLs, Dockerfiles, Terraform, Playbooks
+
+Day 30: Final Review + Resume Update
+- Review full DevOps lifecycle
+- Prepare GitHub README and update resume
+- Practice mock interview questions
